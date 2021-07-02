@@ -1,5 +1,5 @@
 function test() {
-  return "webpack working";
+  return 'webpack working';
 }
 
 test();
