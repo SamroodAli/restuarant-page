@@ -20,5 +20,9 @@
   "bugs": {
     "url": "https://github.com/SamroodAli/restuarant-page/issues"
   },
-  "homepage": "https://github.com/SamroodAli/restuarant-page#readme"
+  "homepage": "https://github.com/SamroodAli/restuarant-page#readme",
+  "devDependencies": {
+    "webpack": "^5.42.0",
+    "webpack-cli": "^4.7.2"
+  }
 }
