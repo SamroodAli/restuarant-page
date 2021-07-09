@@ -5,13 +5,11 @@ function element(element, innerHtml, className, styles, attributes) {
   }
 
   if (className) {
-    className.split(" ").forEach((name) => newElement.classList.add(name));
+    newElement.className = className;
   }
 
   if (styles) {
-    for (const prop in styles) {
-      newElement.style[prop] = styles[prop];
-    }
+    Object.assign(newElement.style, styles);
   }
 
   if (attributes) {
