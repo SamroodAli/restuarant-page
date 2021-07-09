@@ -1,5 +1,9 @@
-import { section } from './tags.js';
+import { section, ul, li, div, p } from "./tags.js";
 
-const contact = () => section('contact');
+const item = (food, cost) => li(div(p(food), p(cost)), "card");
 
-export default contact;
+const items = [item("chicken", 500), item("pizza", 900), item("dumpling", 100)];
+
+const menu = () => section(ul(items));
+
+export default menu;
