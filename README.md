@@ -3,10 +3,9 @@
 A resturant page built using only javascript and css. All elements in the page are created using javascript. Inspired by React, I have created wrappers for DOM APIs making it easy to create nested markup
 
 ## Built With
-
-- HTML
-- CSS With Sass and Bootstrap
+- CSS Bootstrap
 - Javascript
+- Webpack
 
 ## Live Demo
 
@@ -33,6 +32,10 @@ cd restuarant-page
 3. In your terminal, run 
 ```sh
 npm install
+```
+4. After changes, run webpack to build production code
+```sh
+npm run build
 ```
 ## Author
 
