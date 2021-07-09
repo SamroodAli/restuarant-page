@@ -1,3 +1,9 @@
 body {
   background-color: red;
 }
+
+img {
+  position:absolute;
+  height:89vh;
+  width:50%;
+}
