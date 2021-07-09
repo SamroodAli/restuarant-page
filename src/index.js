@@ -1,6 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import pageHeader from './header'
+import pageHeader from "./header";
 
-
-const content = document.getElementById('content')
-content.appendChild(pageHeader())
+const content = document.getElementById("content");
+content.appendChild(pageHeader());
