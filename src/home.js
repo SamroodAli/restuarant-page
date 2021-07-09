@@ -1,7 +1,7 @@
 import { section, img, h1, div, p } from "./tags.js";
 import image from "./restuarant.jpg";
 
-const description = "You haven't lived if you have not tasted Ratchets yet";
+const description = "You haven't lived if you haven't tasted ratchets";
 
 const home = () =>
   section(
