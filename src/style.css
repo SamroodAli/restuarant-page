@@ -25,6 +25,20 @@ img {
   color: rebeccapurple;
 }
 
+.contact-section {
+  margin: 1rem;
+  text-align: center;
+  padding: 1rem;
+  border: 1px solid rebeccapurple;
+  width: 50%;
+  margin: 5rem auto;
+}
+
+.contact-section * {
+  margin: 1rem;
+  padding: 1rem;
+}
+
 p {
   margin: 1rem;
   margin: auto;
