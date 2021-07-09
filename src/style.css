@@ -1,9 +1,11 @@
-body {
-  background-color: red;
+img {
+  margin-top: 2 rem;
+  max-height: 75vh;
+  width: 100%;
 }
 
-img {
-  position:absolute;
-  height:89vh;
-  width:50%;
+.home-section {
+  display: grid;
+  max-width: 100%;
+  grid-template-columns: repeat(2, 1fr);
 }

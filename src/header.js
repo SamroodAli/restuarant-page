@@ -8,7 +8,7 @@ const hamburgerButton = button(
 );
 
 const brand = a(
-  "Ratchets Fried Chicken",
+  "Ratchets",
   "navbar-brand",
   { margin: "1rem 0.5rem" },
   { href: "#" }
