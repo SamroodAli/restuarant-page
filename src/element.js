@@ -1,6 +1,8 @@
 function element(element, innerHtml, className, styles, attributes) {
   const newElement = document.createElement(element);
-  if (innerHtml) {
+  if (Array.isArray(innerHtml)) {
+    innerHtml.forEach((ele) => newElement.appendChild(ele));
+  } else if (innerHtml) {
     newElement.innerHTML = innerHtml;
   }
 
