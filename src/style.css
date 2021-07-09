@@ -1,5 +1,4 @@
 img {
-  margin-top: 2 rem;
   max-height: 75vh;
   width: 100%;
 }
@@ -14,19 +13,39 @@ img {
   text-align: center;
 }
 
-.menu-section ul * {
-  display: flex;
-  margin: 1rem;
+.menu-section {
+  text-align: center;
 }
+
+h1 {
+  margin: 5rem;
+}
+
+.menu-section ul {
+  display: grid;
+  margin: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+}
+
 .menu-section ul div {
+  margin: 0.5rem;
   padding: 1rem;
   background-color: ghostwhite;
   border: 1px solid rebeccapurple;
   color: rebeccapurple;
 }
 
+.menu-section .card {
+  transition: transform 0.5s, background-color 1s;
+}
+
+.menu-section .card:hover {
+  transform: scale(1.1);
+  background-color: rebeccapurple;
+}
+
 .contact-section {
-  margin: 1rem;
   text-align: center;
   padding: 1rem;
   border: 1px solid rebeccapurple;
