@@ -176,7 +176,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \*********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _tags_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./tags.js */ \"./src/tags.js\");\n\n\nconst contact = () => (0,_tags_js__WEBPACK_IMPORTED_MODULE_0__.section)('contact');\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (contact);\n\n\n//# sourceURL=webpack://restuarant-page/./src/menu.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _tags_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./tags.js */ \"./src/tags.js\");\n\n\nconst item = (food, cost) => (0,_tags_js__WEBPACK_IMPORTED_MODULE_0__.li)((0,_tags_js__WEBPACK_IMPORTED_MODULE_0__.div)((0,_tags_js__WEBPACK_IMPORTED_MODULE_0__.p)(food), (0,_tags_js__WEBPACK_IMPORTED_MODULE_0__.p)(cost)), \"card\");\n\nconst items = [item(\"chicken\", 500), item(\"pizza\", 900), item(\"dumpling\", 100)];\n\nconst menu = () => (0,_tags_js__WEBPACK_IMPORTED_MODULE_0__.section)((0,_tags_js__WEBPACK_IMPORTED_MODULE_0__.ul)(items));\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (menu);\n\n\n//# sourceURL=webpack://restuarant-page/./src/menu.js?");
 
 /***/ }),
 
