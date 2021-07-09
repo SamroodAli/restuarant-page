@@ -1,2 +1,0 @@
-# Restuarant project.
-
