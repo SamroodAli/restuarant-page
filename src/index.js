@@ -1,8 +1,8 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./style.css";
-import pageHeader from "./header.js";
-import home from "./home.js";
+import header from "./header.js";
+import main from "./main.js";
 
 const content = document.getElementById("content");
 
-content.append(pageHeader(), home());
+content.append(header(), main());
