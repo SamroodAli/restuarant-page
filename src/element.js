@@ -1,4 +1,4 @@
-function element(element, innerHtml, className, attributes) {
+function element(element, innerHtml, className, styles, attributes) {
   const newElement = document.createElement(element);
   if (innerHtml) {
     newElement.innerHTML = innerHtml;
@@ -8,11 +8,18 @@ function element(element, innerHtml, className, attributes) {
     className.split(" ").forEach((name) => newElement.classList.add(name));
   }
 
-  if (attributes) {
-    for (const { key, value } of attributes) {
-      newElement.setAttribute(key, value);
+  if (styles) {
+    for (const prop in styles) {
+      newElement.style[prop] = styles[prop];
     }
   }
+
+  if (attributes) {
+    for (const key in attributes) {
+      newElement.setAttribute(key, attributes[key]);
+    }
+  }
+  return newElement;
 }
 
 export default element;
