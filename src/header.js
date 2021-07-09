@@ -14,18 +14,23 @@ const brand = a(
   { href: "#" }
 );
 
-const navLinks = div(
-  div([], "navbar-nav"),
+const navLink = (link) => a(link, "nav-item nav-link", {}, { href: "#" });
+
+const navLinks = [navLink("Home"), navLink("Menu"), navLink("Contact")];
+
+const navLinksContainer = div(
+  div(navLinks, "navbar-nav"),
   "collapse navbar-collapse",
   {},
   { id: "navbar" }
 );
 
-const navBarItems = [brand, hamburgerButton];
-const navBarClass = "navbar navbar-expand-lg navbar-light bg-light";
+const navBarItems = [brand, navLinksContainer, hamburgerButton];
 
 const pageHeader = () => {
-  return header(nav(navBarItems, navBarClass));
+  return header(
+    nav(navBarItems, "navbar navbar-expand-lg navbar-light bg-light")
+  );
 };
 
 export default pageHeader;
