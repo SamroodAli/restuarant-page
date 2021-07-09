@@ -1,6 +1,10 @@
 import ele from "./element";
 
 export const div = (...args) => ele("div", ...args);
+export const section = (...args) => ele("section", ...args);
+export const header = (...args) => ele("header", ...args);
+export const main = (...args) => ele("main", ...args);
+export const footer = (...args) => ele("footer", ...args);
 
 export const h1 = (...args) => ele("h1", ...args);
 export const h2 = (...args) => ele("h2", ...args);
