@@ -20,3 +20,4 @@ export const li = (...args) => ele("li", ...args);
 export const nav = (...args) => ele("nav", ...args);
 export const a = (...args) => ele("a", ...args);
 
+export const button = (...args) => ele("button", ...args);

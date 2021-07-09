@@ -1,4 +1,4 @@
-import { header, nav, ul, li, a } from "./tags";
+import { header, nav, ul, li, a, button } from "./tags";
 
 const navBar = [
   a(
@@ -6,6 +6,12 @@ const navBar = [
     "navbar-brand",
     { margin: "1rem 0.5rem" },
     { href: "#" }
+  ),
+  button(
+    "",
+    "navbar-toggle",
+    {},
+    { type: "button", "data-toggle": "collapse", "data-target": "navbar" }
   ),
 ];
 
