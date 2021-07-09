@@ -1,9 +1,10 @@
 function element(element, innerHtml, className, styles, attributes) {
   const newElement = document.createElement(element);
+
   if (Array.isArray(innerHtml)) {
-    innerHtml.forEach((ele) => newElement.appendChild(ele));
+    newElement.append(...innerHtml)
   } else if (innerHtml) {
-    newElement.innerHTML = innerHtml;
+    newElement.innerText = (innerHtml)
   }
 
   if (className) {
