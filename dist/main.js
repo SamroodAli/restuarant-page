@@ -86,7 +86,7 @@ eval("\n\n/* istanbul ignore next  */\nfunction apply(style, options, obj) {\n  
   \***************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./element */ \"./src/element.js\");\n\n\nfunction html(...args) {\n  console.log(args);\n  args.reduce((ele1, ele2) => {\n    ele1.appendChild(ele2);\n    return ele2;\n  });\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (html);\n\n\n//# sourceURL=webpack://restuarant-page/./src/domElement.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./element */ \"./src/element.js\");\n\n\nfunction html(...args) {\n  console.log(args);\n  args.reduce((ele1, ele2) => {\n    if (Array.isArray(ele2)) {\n      ele2.forEach((ele) => {\n        ele1.appendChild(ele);\n      });\n    } else {\n      ele1.appendChild(ele2);\n    }\n    return ele2;\n  });\n  return args[0];\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (html);\n\n\n//# sourceURL=webpack://restuarant-page/./src/domElement.js?");
 
 /***/ }),
 
@@ -106,7 +106,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! bootstrap/dist/css/bootstrap.min.css */ \"./node_modules/bootstrap/dist/css/bootstrap.min.css\");\n/* harmony import */ var _element__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./element */ \"./src/element.js\");\n/* harmony import */ var _domElement__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./domElement */ \"./src/domElement.js\");\n\n\n\nconst content = document.getElementById(\"content\");\nconst p = (0,_element__WEBPACK_IMPORTED_MODULE_1__.default)(\"p\", \"Hello world\", \"bg-primary\", {\n  color: \"red\",\n  backgroundColor: \"green\",\n  border: \"10px solid black\",\n});\nconst p2 = (0,_element__WEBPACK_IMPORTED_MODULE_1__.default)(\"p\", \"Hello world\", \"bg-primary\", {\n  color: \"red\",\n  backgroundColor: \"green\",\n  border: \"10px solid black\",\n});\n(0,_domElement__WEBPACK_IMPORTED_MODULE_2__.default)(content, p, p2);\n\n\n//# sourceURL=webpack://restuarant-page/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! bootstrap/dist/css/bootstrap.min.css */ \"./node_modules/bootstrap/dist/css/bootstrap.min.css\");\n/* harmony import */ var _domElement__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./domElement */ \"./src/domElement.js\");\n/* harmony import */ var _tags__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./tags */ \"./src/tags.js\");\n\n\n\n\nconst content = document.getElementById(\"content\");\n\n(0,_domElement__WEBPACK_IMPORTED_MODULE_1__.default)(content, [(0,_tags__WEBPACK_IMPORTED_MODULE_2__.h1)(\"Hello world\"), (0,_tags__WEBPACK_IMPORTED_MODULE_2__.p)(\"Hello \")]);\n\n\n//# sourceURL=webpack://restuarant-page/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/tags.js":
+/*!*********************!*\
+  !*** ./src/tags.js ***!
+  \*********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"h1\": () => (/* binding */ h1),\n/* harmony export */   \"h2\": () => (/* binding */ h2),\n/* harmony export */   \"h3\": () => (/* binding */ h3),\n/* harmony export */   \"h4\": () => (/* binding */ h4),\n/* harmony export */   \"h5\": () => (/* binding */ h5),\n/* harmony export */   \"h6\": () => (/* binding */ h6),\n/* harmony export */   \"p\": () => (/* binding */ p)\n/* harmony export */ });\n/* harmony import */ var _element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./element */ \"./src/element.js\");\n\n\nconst h1 = (...args) => (0,_element__WEBPACK_IMPORTED_MODULE_0__.default)(\"h1\", ...args);\nconst h2 = (...args) => (0,_element__WEBPACK_IMPORTED_MODULE_0__.default)(\"h2\", ...args);\nconst h3 = (...args) => (0,_element__WEBPACK_IMPORTED_MODULE_0__.default)(\"h3\", ...args);\nconst h4 = (...args) => (0,_element__WEBPACK_IMPORTED_MODULE_0__.default)(\"h4\", ...args);\nconst h5 = (...args) => (0,_element__WEBPACK_IMPORTED_MODULE_0__.default)(\"h5\", ...args);\nconst h6 = (...args) => (0,_element__WEBPACK_IMPORTED_MODULE_0__.default)(\"h6\", ...args);\n\nconst p = (...args) => (0,_element__WEBPACK_IMPORTED_MODULE_0__.default)(\"p\", ...args);\n\n\n//# sourceURL=webpack://restuarant-page/./src/tags.js?");
 
 /***/ })
 
