@@ -9,3 +9,12 @@ img {
   max-width: 100%;
   grid-template-columns: repeat(2, 1fr);
 }
+
+.home-section div {
+  text-align: center;
+}
+
+p {
+  margin: 1rem;
+  margin: auto;
+}

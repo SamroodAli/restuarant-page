@@ -1,5 +1,5 @@
-import { section } from "./tags.js";
+import { section } from './tags.js';
 
-const contact = () => section("contact");
+const contact = () => section('contact');
 
 export default contact;
