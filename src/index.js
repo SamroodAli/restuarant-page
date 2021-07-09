@@ -5,4 +5,4 @@ import main from "./main.js";
 
 const content = document.getElementById("content");
 
-content.append(header(), main());
+content.append(header(), main);
