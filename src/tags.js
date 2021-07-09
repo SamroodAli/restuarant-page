@@ -14,6 +14,7 @@ export const h5 = (...args) => ele("h5", ...args);
 export const h6 = (...args) => ele("h6", ...args);
 
 export const p = (...args) => ele("p", ...args);
+export const span = (...args) => ele("span", ...args);
 export const ul = (...args) => ele("ul", ...args);
 export const li = (...args) => ele("li", ...args);
 
