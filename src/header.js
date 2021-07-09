@@ -2,17 +2,19 @@ import {header,nav,ul,li,a} from './tags'
 
 
 const navLinks = [
-  li(a(), "")
+  li(a('hello world'))
 ]
 
-const pageHedaer = () => {
+const pageHeader = () => {
   return header(
     [
       nav(
         ul(
-          
+          navLinks
         )
       )
     ],"bg-primary"
   )
 }
+
+export default pageHeader
