@@ -14,7 +14,13 @@ const brand = a(
   { href: "#" }
 );
 
-const navLink = (link) => a(link, "nav-item nav-link", {}, { href: "#" });
+const navLink = (link) =>
+  a(
+    link,
+    "nav-item nav-link",
+    { margin: "0 2rem", color: "black" },
+    { href: "#" }
+  );
 
 const navLinks = [navLink("Home"), navLink("Menu"), navLink("Contact")];
 

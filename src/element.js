@@ -2,14 +2,11 @@ function element(element, innerHtml, className, styles, attributes) {
   const newElement = document.createElement(element);
 
   if (Array.isArray(innerHtml)) {
-    newElement.append(...innerHtml)
-   
-  }
-
-   else if (typeof innerHtml == "object") {
-    newElement.appendChild(innerHtml)
+    newElement.append(...innerHtml);
+  } else if (typeof innerHtml == "object") {
+    newElement.appendChild(innerHtml);
   } else if (typeof innerHtml == "string") {
-    newElement.innerText = (innerHtml)
+    newElement.innerText = innerHtml;
   }
 
   if (className) {
