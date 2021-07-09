@@ -16,3 +16,7 @@ export const h6 = (...args) => ele("h6", ...args);
 export const p = (...args) => ele("p", ...args);
 export const ul = (...args) => ele("ul", ...args);
 export const li = (...args) => ele("li", ...args);
+
+export const nav = (...args) => ele("nav", ...args);
+export const a = (...args) => ele("a", ...args);
+

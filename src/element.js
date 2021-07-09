@@ -3,7 +3,9 @@ function element(element, innerHtml, className, styles, attributes) {
 
   if (Array.isArray(innerHtml)) {
     newElement.append(...innerHtml)
-  } else if (innerHtml) {
+  } else if (typeof innerHtml == "object") {
+    newElement.appendChild(innerHtml)
+  } else if (typeof innerHtml == "string") {
     newElement.innerText = (innerHtml)
   }
 
