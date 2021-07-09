@@ -22,8 +22,11 @@ const navLink = (link) =>
     { href: "#" }
   );
 
-const navLinks = [navLink("Home"), navLink("Menu"), navLink("Contact")];
+export const homeLink = navLink("Home");
+export const menuLink = navLink("Menu");
+export const contactLink = navLink("Contact");
 
+const navLinks = [homeLink, menuLink, contactLink];
 const navLinksContainer = div(
   div(navLinks, "navbar-nav"),
   "collapse navbar-collapse",
