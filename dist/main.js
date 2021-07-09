@@ -86,7 +86,17 @@ eval("\n\n/* istanbul ignore next  */\nfunction apply(style, options, obj) {\n  
   \************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction element(element, innerHtml, className, styles, attributes) {\n  const newElement = document.createElement(element);\n\n  if (Array.isArray(innerHtml)) {\n    newElement.append(...innerHtml)\n  } else if (typeof innerHtml == \"object\") {\n    newElement.appendChild(innerHtml)\n  } else if (typeof innerHtml == \"string\") {\n    newElement.innerText = (innerHtml)\n  }\n\n  if (className) {\n    newElement.className = className;\n  }\n\n  if (styles) {\n    Object.assign(newElement.style, styles);\n  }\n\n  if (attributes) {\n    for (const key in attributes) {\n      newElement.setAttribute(key, attributes[key]);\n    }\n  }\n  return newElement;\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (element);\n\n\n//# sourceURL=webpack://restuarant-page/./src/element.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction element(element, innerHtml, className, styles, attributes) {\n  const newElement = document.createElement(element);\n\n  if (Array.isArray(innerHtml)) {\n    newElement.append(...innerHtml)\n   \n  }\n\n   else if (typeof innerHtml == \"object\") {\n    newElement.appendChild(innerHtml)\n  } else if (typeof innerHtml == \"string\") {\n    newElement.innerText = (innerHtml)\n  }\n\n  if (className) {\n    newElement.className = className;\n  }\n\n  if (styles) {\n    Object.assign(newElement.style, styles);\n  }\n\n  if (attributes) {\n    for (const key in attributes) {\n      newElement.setAttribute(key, attributes[key]);\n    }\n  }\n  return newElement;\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (element);\n\n\n//# sourceURL=webpack://restuarant-page/./src/element.js?");
+
+/***/ }),
+
+/***/ "./src/header.js":
+/*!***********************!*\
+  !*** ./src/header.js ***!
+  \***********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _tags__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./tags */ \"./src/tags.js\");\n\n\n\nconst navLinks = [\n  (0,_tags__WEBPACK_IMPORTED_MODULE_0__.li)((0,_tags__WEBPACK_IMPORTED_MODULE_0__.a)('hello world'))\n]\n\nconst pageHeader = () => {\n  return (0,_tags__WEBPACK_IMPORTED_MODULE_0__.header)(\n    [\n      (0,_tags__WEBPACK_IMPORTED_MODULE_0__.nav)(\n        (0,_tags__WEBPACK_IMPORTED_MODULE_0__.ul)(\n          navLinks\n        )\n      )\n    ],\"bg-primary\"\n  )\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (pageHeader);\n\n\n//# sourceURL=webpack://restuarant-page/./src/header.js?");
 
 /***/ }),
 
@@ -96,7 +106,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! bootstrap/dist/css/bootstrap.min.css */ \"./node_modules/bootstrap/dist/css/bootstrap.min.css\");\n/* harmony import */ var _tags__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./tags */ \"./src/tags.js\");\n\n\n\n\n//# sourceURL=webpack://restuarant-page/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! bootstrap/dist/css/bootstrap.min.css */ \"./node_modules/bootstrap/dist/css/bootstrap.min.css\");\n/* harmony import */ var _header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./header */ \"./src/header.js\");\n\n\n\n\nconst content = document.getElementById('content')\ncontent.appendChild((0,_header__WEBPACK_IMPORTED_MODULE_1__.default)())\n\n\n//# sourceURL=webpack://restuarant-page/./src/index.js?");
 
 /***/ }),
 
