@@ -96,7 +96,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! bootstrap/dist/css/bootstrap.min.css */ \"./node_modules/bootstrap/dist/css/bootstrap.min.css\");\n/* harmony import */ var _tags__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./tags */ \"./src/tags.js\");\n\n\n\nconst content = document.getElementById(\"content\");\nconst mead = [(0,_tags__WEBPACK_IMPORTED_MODULE_1__.main)([\n  (0,_tags__WEBPACK_IMPORTED_MODULE_1__.p)(\"HEllo world\"),\n  (0,_tags__WEBPACK_IMPORTED_MODULE_1__.p)(\"Hello world\")\n]),(0,_tags__WEBPACK_IMPORTED_MODULE_1__.main)(\"Hello\"),(0,_tags__WEBPACK_IMPORTED_MODULE_1__.main)(\"Hello\")]\ncontent.append(...mead)\n\n\n\n//# sourceURL=webpack://restuarant-page/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! bootstrap/dist/css/bootstrap.min.css */ \"./node_modules/bootstrap/dist/css/bootstrap.min.css\");\n/* harmony import */ var _tags__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./tags */ \"./src/tags.js\");\n\n\n\n\n//# sourceURL=webpack://restuarant-page/./src/index.js?");
 
 /***/ }),
 
