@@ -10,7 +10,7 @@ A resturant page built using only javascript and css. All elements in the page a
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://samroodali.github.io/restuarant-page/)
 
 
 ## Getting Started
