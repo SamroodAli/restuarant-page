@@ -4,7 +4,7 @@ import menu from "./menu.js";
 import { homeLink, menuLink, contactLink } from "./header";
 import { section } from "./tags.js";
 
-const main = section(home(), "", {}, { id: "main-section" });
+const main = () => section(home(), "", {}, { id: "main-section" });
 
 homeLink.addEventListener("click", () => {
   const mainContent = document.getElementById("main-section");
