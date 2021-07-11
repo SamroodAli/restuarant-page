@@ -9,8 +9,8 @@ A resturant page built using only javascript and css. All elements in the page a
 
 ## Live Demo
 
-* Click on the link below for accessing the deployed website.
-[Ratchets Restuarant Live Link](https://samroodali.github.io/restuarant-page/)
+Click on the link below for accessing the deployed website.
+### [Ratchets Restuarant Live Link](https://samroodali.github.io/restuarant-page/)</p>
 
 
 ## Getting Started
