@@ -1,4 +1,4 @@
-# Restuarant project.
+# Ratchets Restuarant project.
 
 A resturant page built using only javascript and css. All elements in the page are created using javascript. Inspired by React, I have created wrappers for DOM APIs making it easy to create nested markup
 
@@ -9,7 +9,8 @@ A resturant page built using only javascript and css. All elements in the page a
 
 ## Live Demo
 
-[Live Demo Link](https://samroodali.github.io/restuarant-page/)
+* Click on the link below for accessing the deployed website.
+[Ratchets Restuarant Live Link](https://samroodali.github.io/restuarant-page/)
 
 
 ## Getting Started
@@ -21,6 +22,9 @@ To get a local copy up and running follow these simple example steps.
 - Node js (optional)
 
 ### Setup
+
+All code below are for a terminal.
+
 1. Clone repository: 
 ```sh
   $ git clone https://github.com/SamroodAli/restuarant-page.git
@@ -33,10 +37,17 @@ cd restuarant-page
 ```sh
 npm install
 ```
-4. After changes, run webpack to build production code
+4. After changes, run webpack to build production code.
 ```sh
 npm run build
 ```
+5. You can now open the `index.html` file in `dist folder` in any browser.
+   
+6. You can also run the following to access the website on `http://localhost:5000` in your local computer.
+```sh
+npm run serve
+```
+* Press `Ctrl + c` to exit the `npm run serve` session in your terminal.
 ## Author
 
 ![Samrood Ali's GitHub stats](https://github-readme-stats.vercel.app/api?username=SamroodAli&count_private=true&theme=dark&show_icons=true)

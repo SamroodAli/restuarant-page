@@ -7,6 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack ",
     "dev": "webpack --serve --mode development --open",
+    "serve": "serve dist",
     "lint": "npx stylelint '**/*.{css,scss}' --fix",
     "eslint": "npx eslint . --fix"
   },
@@ -27,6 +28,7 @@
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.23.4",
     "hint": "^6.1.4",
+    "serve": "^12.0.0",
     "style-loader": "^3.0.0",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^21.0.0",
