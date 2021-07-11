@@ -17,7 +17,8 @@ const navLinksContainer = div(
 
 const navBarItems = [brand, navLinksContainer, hamburgerButton];
 
-const pageHeader = () =>
-  header(nav(navBarItems, "navbar navbar-expand-lg navbar-light bg-light"));
+const navBar = header(
+  nav(navBarItems, "navbar navbar-expand-lg navbar-light bg-light")
+);
 
-export default pageHeader;
+export default navBar;
