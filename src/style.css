@@ -1,0 +1,64 @@
+img {
+  max-height: 75vh;
+  width: 100%;
+}
+
+.home-section {
+  display: grid;
+  max-width: 100%;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.home-section div {
+  text-align: center;
+}
+
+.menu-section {
+  text-align: center;
+}
+
+h1 {
+  margin: 5rem;
+}
+
+.menu-section ul {
+  display: grid;
+  margin: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+}
+
+.menu-section ul div {
+  margin: 0.5rem;
+  padding: 1rem;
+  background-color: ghostwhite;
+  border: 1px solid rebeccapurple;
+  color: rebeccapurple;
+}
+
+.menu-section .card {
+  transition: transform 0.5s, background-color 1s;
+}
+
+.menu-section .card:hover {
+  transform: scale(1.1);
+  background-color: rebeccapurple;
+}
+
+.contact-section {
+  text-align: center;
+  padding: 1rem;
+  border: 1px solid rebeccapurple;
+  width: 50%;
+  margin: 5rem auto;
+}
+
+.contact-section * {
+  margin: 1rem;
+  padding: 1rem;
+}
+
+p {
+  margin: 1rem;
+  margin: auto;
+}
